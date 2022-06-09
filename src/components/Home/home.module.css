@@ -1,0 +1,159 @@
+.home{
+    display:flex;
+}
+
+.productContainer{
+    display: flex;
+    width: 78%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+    
+}
+.title{
+    font-size: 20px;
+    font-weight: bolder;
+    padding-bottom: 30px;
+}
+.carousel{
+    background: #fff;
+}
+.title1{
+    font-style: italic;
+    font-weight: bolder;
+}
+
+.filters{
+    background-color: #DE4D40;
+    color:#fff;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    margin: 10px;
+    height: 60vh;
+}
+
+.filters span{
+    padding: 5px;
+}
+
+.banner{
+  padding: 20px;
+  margin: 5px;
+}
+
+.banner img{
+    width: 100%;
+    height: 100%;
+}
+
+.products{
+    width:30%;
+    margin: 10px;
+}
+
+.filtercart{
+    background-color: #fff;
+    color:#000;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    margin: 10px;
+    height: 350px;
+    font-weight:bolder;
+}
+
+.filtercart span{
+  padding-bottom: 20px;
+}
+
+.payment img{
+    width: 200px;
+    height: 90px;
+    padding-bottom: 10px;
+
+}
+.header2{
+  background: #007BFF;
+  width: 50%;
+  height: 50px;
+  justify-content: space-between;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 20px;
+  margin: 20px;
+  padding: 10px;
+}
+.header{
+  background: #DC3545;
+  width: 100%;
+  height: 50px;
+  justify-content: space-between;
+  display: flex;
+  align-content: flex-start;
+  align-items: center;
+  color: #fff;
+  margin: 2px;
+}
+
+
+
+/* Tablet Media querrirs */
+
+@media(max-width: 768px) {
+    .filters{
+        width:40%;
+        padding:10px;
+        margin: 4px;
+    }
+
+    .productContainer{
+        width:58%;
+        padding: 0;
+    }
+
+    .products{
+        width: 100%;
+    }
+    .banner img{
+        height: 120px;
+    }
+    .filtercart{
+        width:30%;
+        padding:10px;
+        margin: 4px;
+    }
+    
+}
+
+/* Mobile device */
+
+@media(max-width:480px){
+
+    .filters{
+       display: none;
+    }
+
+    .productContainer{
+        width:100%;
+        padding: 0;
+    }
+
+    .products{
+        width: 100%;
+        margin: 2px;
+    }
+    .banner img{
+        display: none;
+    }
+    .filtercart{
+        width:90%;
+        padding:10px;
+        margin: 4px;
+        height: 350px;
+    }
+}
