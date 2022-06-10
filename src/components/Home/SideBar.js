@@ -4,7 +4,7 @@ import { Form, Button } from 'react-bootstrap'
 
 const SideBar = () => {
   return <div className={classes.filters}>
-      <span className={classes.title}>HOME OF GOODIES</span>
+      <span className={classes.title}>HOME OF GOODS</span>
       <span className={classes.title1}>Filter Products</span>
       <span>
         <Form.Check 
