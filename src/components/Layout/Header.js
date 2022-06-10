@@ -149,7 +149,7 @@ const Header = () => {
               }}
               to="/"
             >
-              RAYON{" "}
+              MINC SHOP{" "}
               <GiShoppingCart
                 style={{
                   fontSize: "30px",
