@@ -149,7 +149,7 @@ const Header = () => {
               }}
               to="/"
             >
-              MINC SHOP{" "}
+              SPACESEAL LIMITED.{" "}
               <GiShoppingCart
                 style={{
                   fontSize: "30px",
