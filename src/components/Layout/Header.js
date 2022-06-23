@@ -129,7 +129,7 @@ const Header = () => {
                   margin: "10px",
                 }}
               >
-                Call or Whatsapp: + 2547-407-239 to make order
+                Call or Whatsapp: + 254-721-661-932 to make order
               </span>
             </div>
           </Container>
