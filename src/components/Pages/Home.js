@@ -1,4 +1,5 @@
-import React, { useEffect } from "react";
+
+import React, { useState, useRef, useEffect } from 'react';
 import { useDispatch, useSelector } from "react-redux";
 import { Products } from "../../actions/productsActions";
 import ErrorMessage from "../../helpers/ErrorMessage";
@@ -10,7 +11,6 @@ import Slider from "react-slick";
 import { Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { AddToCartAction, RemoveFromCart } from "../../actions/cartActions";
-import React, { useState, useRef, useEffect } from 'react';
 
 export function numberWithComas(x) {
   return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
