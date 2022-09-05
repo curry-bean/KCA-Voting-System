@@ -217,7 +217,16 @@ const Header = () => {
                           display: "flex",
                         }}
                       >
-
+               
+                        <AiOutlineUserAdd
+                          style={{
+                            fontSize: "20px",
+                            margin: "10px",
+                          }}
+                        />{" "}
+                        My Account
+                      </span>
+               
                     </Link>
                     <hr />
                     <div style={{
