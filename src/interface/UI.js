@@ -5,7 +5,7 @@ const UI = ({children}) => {
 
   return <div className={classes.card}>
     <div  className={classes.header2}>
-      <span>Fast Delivery Within Nairobi</span>
+      <span>KCA UNIVERSITY</span>
     </div>
       {children }
   </div>;
