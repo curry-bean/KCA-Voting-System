@@ -45,6 +45,7 @@ const SignUp = () => {
             <div className={classes.logo}>
               {error && <ErrorMessage>{error}</ErrorMessage>}
               {errormsg && <ErrorMessage>{errormsg}</ErrorMessage>}
+              <span>Welcome to KCA Voting System login</span>
               <span>Create Account</span>
             </div>
             <div>
