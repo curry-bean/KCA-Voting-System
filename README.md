@@ -1,2 +1,3 @@
 # RAYON E-COMMERCE
-## craeted by the folowing stacks 
+## created by the folowing stacks 
+...
