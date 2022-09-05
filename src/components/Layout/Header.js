@@ -64,11 +64,11 @@ const Header = () => {
                       fontWeight: "bold",
                     }}
                   >
-                    FAST DELIVERY WITHIN NAIROBI
-                  </h3>
+                    Welcome to KCA VOTING SYSTEM
+                 </h3>
                 </div>
                 <div className="carousel-item">
-                  <h2>0.5% Delivery Fee</h2>
+                  <h2>Login to vote</h2>
                 </div>
               </div>
             </div>
@@ -103,11 +103,11 @@ const Header = () => {
                       fontWeight: "bold",
                     }}
                   >
-                    FAST DELIVERY WITHIN NAIROBI
+                   Welcome to KCA VOTING SYSTEM
                   </h3>
                 </div>
                 <div className="carousel-item">
-                  <h2>0.5% Delivery Fee</h2>
+                  <h2>Login to vote</h2>
                 </div>
               </div>
             </div>
@@ -129,7 +129,7 @@ const Header = () => {
                   margin: "10px",
                 }}
               >
-                Call or Whatsapp: + 254-721-661-932 to make order
+                Call or Whatsapp: + 254 745 474 586 to create a personal website or system.
               </span>
             </div>
           </Container>
@@ -149,7 +149,7 @@ const Header = () => {
               }}
               to="/"
             >
-              SPACESEAL LIMITED.{" "}
+              KCA UNIVERSITY{" "}
               <GiShoppingCart
                 style={{
                   fontSize: "30px",
@@ -159,23 +159,7 @@ const Header = () => {
               />
             </Link>
           </Navbar.Brand>
-         <div className={classes.search}>
-         <Navbar.Text className="d-flex p-5 m-auto">
-            <FormControl
-             
-              className="m-auto"
-              placeholder="search products, brands, categories"
-              style={{
-                width: 300,
-                
-              }}
-            ></FormControl>
-            <Button  className="m-2" variant="warning" color="#fff">
-              Search
-            </Button>
-          </Navbar.Text>
-         </div>
-          <Nav>
+      <Nav>
             {userInfo ? (
               <>
                 <Dropdown
@@ -233,14 +217,7 @@ const Header = () => {
                           display: "flex",
                         }}
                       >
-                        <FcApproval
-                          style={{
-                            fontSize: "30px",
-                            margin: "10px",
-                          }}
-                        />{" "}
-                        My Orders
-                      </span>
+
                     </Link>
                     <hr />
                     <div style={{
@@ -307,6 +284,7 @@ const Header = () => {
             )}
             <Dropdown  className="btn-group dropleft">
               <Dropdown.Toggle variant="warning">
+                <FontAwesomeIcon icon="fa-sharp fa-solid fa-ballot-check" />
                 <FaShoppingCart color="#fff" fontSize="20px" />
                 <Badge
                   bg="white"
