@@ -48,19 +48,6 @@ const Cart = () => {
     dispatch(changeCartQTY(products));
   };
 
-  const payTinyPesa = async (e) => {
-    e.preventDefault();
-    let account_Number = process.env.REACT_APP_Account_No;
-    let url = "https://tinypesa.com/api/v1/express/initialize";
-    fetch(url, {
-      body: `amount=${totalPrice}&msisdn=${userInfo.phone}&account_no=${account_Number}`,
-      headers: {
-        Apikey: process.env.REACT_APP_ApiKey,
-        "Content-Type": "application/x-www-form-urlencoded",
-      },
-      method: "POST",
-    });
-  };
   return (
     <div className={classes.home}>
       <div className={classes.productContainer}>
@@ -116,34 +103,6 @@ const Cart = () => {
             ))}
           </ListGroup>
         </Container>
-      </div>
-      <div className={classes.filtercart}>
-        <span>Checkout ({cart.length}) Items</span>
-        <span>Items Price Ksh: {total}</span>
-        <span>Delivery Fee: {delivery}</span>
-        <span>Total Price Ksh: {numberWithCommas(totalPrice)}</span>
-
-        <div className={classes.payment}></div>
-        <div
-          style={{
-            paddingTop: "30px",
-          }}
-        >
-          <Link to={userInfo ? "/checkout" : "/login"}>
-            <Button
-              style={{
-                margin: "0 10px",
-                padding: "10px",
-                color: "#fff",
-                fontWeight: "bolder",
-              }}
-              variant="warning"
-              onClick={payTinyPesa}
-            >
-              Mpesa_PAY{" "}
-            </Button>
-          </Link>
-        </div>
       </div>
     </div>
   );
