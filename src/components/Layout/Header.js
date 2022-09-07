@@ -293,7 +293,7 @@ const Header = () => {
             )}
             <Dropdown  className="btn-group dropleft">
               <Dropdown.Toggle variant="warning">
-                <FontAwesomeIcon icon="fa-sharp fa-solid fa-ballot-check" />
+                
                 <FaShoppingCart color="#fff" fontSize="20px" />
                 <Badge
                   bg="white"
