@@ -1,5 +1,4 @@
-
-import React, { useState, useRef, useEffect } from 'react';
+import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Products } from "../../actions/productsActions";
 import ErrorMessage from "../../helpers/ErrorMessage";
