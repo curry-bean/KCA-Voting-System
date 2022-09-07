@@ -159,7 +159,23 @@ const Header = () => {
               />
             </Link>
           </Navbar.Brand>
-      <Nav>
+         <div className={classes.search}>
+         <Navbar.Text className="d-flex p-5 m-auto">
+            <FormControl
+             
+              className="m-auto"
+              placeholder="search products, brands, categories"
+              style={{
+                width: 300,
+                
+              }}
+            ></FormControl>
+            <Button  className="m-2" variant="warning" color="#fff">
+              Search
+            </Button>
+          </Navbar.Text>
+         </div>
+          <Nav>
             {userInfo ? (
               <>
                 <Dropdown
@@ -217,16 +233,14 @@ const Header = () => {
                           display: "flex",
                         }}
                       >
-               
-                        <AiOutlineUserAdd
+                        <FcApproval
                           style={{
-                            fontSize: "20px",
+                            fontSize: "30px",
                             margin: "10px",
                           }}
                         />{" "}
-                        My Account
+                        My Orders
                       </span>
-               
                     </Link>
                     <hr />
                     <div style={{
@@ -293,7 +307,6 @@ const Header = () => {
             )}
             <Dropdown  className="btn-group dropleft">
               <Dropdown.Toggle variant="warning">
-                
                 <FaShoppingCart color="#fff" fontSize="20px" />
                 <Badge
                   bg="white"
