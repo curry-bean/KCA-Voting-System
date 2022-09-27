@@ -11,6 +11,7 @@ import { Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { AddToCartAction, RemoveFromCart } from "../../actions/cartActions";
 
+
 export function numberWithComas(x) {
   return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 }
@@ -60,24 +61,24 @@ const Home = () => {
                   fontSize: "35px",
                 }}
               />{" "}
-              VOTE for your next leadership committee
-            </span>	
+              Flash Sales
+            </span>
+            <span>
+              Time Left:<strong>11h:50m:45s</strong>{" "}
+            </span>
           </div>
           {products.map((product) => {
             return (
               <Slider {...settings} key={product._id}>
-                <div
-                  style={{
-                    width: "50%",
-                    background: "#fff",
-                  }}
-                >
+                <div className="product_wrapper">
                   <Link to={`/produt/${product._id}`}>
-                    <img
-                      src={product.image}
-                      height="120px"
-                      alt={product.title}
-                    />
+                    <div className="products_image">
+                      <img
+                        src={product.image}
+                        height="120px"
+                        alt={product.title}
+                      />
+                    </div>
                   </Link>
                   <div
                     style={{
@@ -85,11 +86,15 @@ const Home = () => {
                       flexDirection: "column",
                     }}
                   >
-                    <span>{product.title}</span>
-                    <span>
-                      {product.description.substring(0, 10)}{" "}
-                      {product.description.length >= 10 && `...`}
-                    </span>
+                    <div className="product_info">
+                      <span>{product.title}</span>
+                    </div>
+                    <div className="product_description">  
+                      <span>
+                        {product.description.substring(0, 30)}{" "}
+                        {product.description.length >= 30 && `...`}
+                      </span>
+                    </div> 
                     <h5>Ksh. {numberWithComas(product.price)}</h5>
                   </div>
                   <div>
@@ -131,7 +136,7 @@ const Home = () => {
             alignItems: "center",
           }}
         >
-          Advancing Knowledge, Driving Change
+          Fast Delivery Within Nairobi
         </span>
       </div>
     </>
